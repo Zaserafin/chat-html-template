@@ -5,15 +5,53 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
 
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Urbanist:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
     <link rel="stylesheet" href="/css/main.css" />
   </head>
   <body>
-    <main class="container">
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum natus,
-      itaque vero voluptatem quae, autem veritatis commodi suscipit iusto
-      perspiciatis animi nobis. Totam aliquid harum reiciendis quam sed corrupti
-      adipisci!
-    </main>
+    <div class="container">
+      <header class="header">
+        <section class="section">
+          <img
+            class="profile-image"
+            src="/assets/images/default_profile.png"
+            alt=""
+          />
+          <div>
+            <h2 class="title">Zaserafin 🎈</h2>
+            <span class="status">En línea</span>
+          </div>
+        </section>
+      </header>
+      <main class="content">
+        <ul id="chat-list" class="message-list">
+          <li class="message incomming">Hola hermano! Cómo estás?</li>
+          <li class="message incomming">
+            <img src="/assets/images/example_image.jpg" alt="" srcset="" />
+            Mira esta imagén... ¿A que es muy chula?
+          </li>
+        </ul>
+      </main>
+      <form class="footer chat-form" id="chat-form">
+        <input
+          placeholder="Escribe algo..."
+          class="chat-input"
+          type="text"
+          name=""
+          id="chat-input"
+          name="chat-input"
+        />
+        <button class="chat-submit" type="submit" name="" id="">
+          <img src="/assets/icons/send.svg" alt="" srcset="" />
+        </button>
+      </form>
+    </div>
 
     <script src="/js/main.js"></script>
   </body>
